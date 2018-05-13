@@ -9,7 +9,4 @@ metadata:
 spec:
   chartGitPath: hello-world
   releaseName: hello-world-1
-  values:
-    replicaCount: 1
-    image:
-      tag: 0.2.2
+  
