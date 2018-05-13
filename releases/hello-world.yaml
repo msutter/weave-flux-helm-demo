@@ -1,0 +1,15 @@
+---
+apiVersion: helm.integrations.flux.weave.works/v1alpha2
+kind: FluxHelmRelease
+metadata:
+  name: hello-world
+  namespace: test
+  labels:
+    chart: hello-world
+spec:
+  chartGitPath: hello-world
+  releaseName: hello-world-1
+  values:
+    replicaCount: 1
+    image:
+      tag: 0.2.2
